@@ -37,6 +37,9 @@ BACKEND.sendRequest(xhr).then(function (results) {
 
 });
 
+
+
+
 bind_openup_event();
 function bind_openup_event() {
     var organs = document.querySelectorAll('.organ');

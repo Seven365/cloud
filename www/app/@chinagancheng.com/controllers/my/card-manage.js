@@ -18,12 +18,27 @@ xd_back.addEventListener('touchend', function (e) {
 });
 
 add_nfc_card_btn.addEventListener('touchend' , function () {
-	APP.openPopup('bind-NFC-card.html'); 
+	APP.openPopup('bind-NFC-card.html');
 });
+
+// window.top['accountId']
+
+var xhr = BACKEND.makeRequest('GET', '/v2/accounts/cards/{organsAccountIds}', 'json');
+BACKEND.sendRequest(xhr).then(function (result) {
+   
+   
+}).catch(function (error) {
+   
+   
+});
+
+
+
+
 
 NFC_SERVICE.feed.subscribe('redownload-cards', null, function () {
 	console.log('重新下载卡片');
-	var xhr = BACKEND.makeRequest('POST', '/_api/xxx', 'json');
+	var xhr = BACKEND.makeRequest('GET', '/v2/accounts/cards/{organsAccountIds}', 'json');
 	BACKEND.sendRequest(
         xhr
     ).then(function(params) {
