@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.vbox {
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.hbox {
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row; flex-flow: row;
+}
+.flexible {
+  position: relative;
+  -webkit-flex:1; flex: 1;
+}
+.client-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+.Activity {
+  /* @apply .vbox */
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.Activity > header {
+  background: white;
+  color: black;
+  padding: 3rem 1rem;
+  line-height: 6rem;
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  border-bottom: solid 1px #cccccc;
+}
+.Activity > header > [data-trigger-target=back] {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 3rem 1rem 2rem 4rem;
+  background: url(back-black.svg) 1rem 50% no-repeat;
+  background-size: 2rem 4rem;
+  z-index: 999;
+}
+.Activity > header > [data-trigger-target=back]:active {
+  background-color: gray;
+}
+.Activity > header > button {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+  background: transparent;
+  border: none;
+}
+.Activity > main {
+  position: relative;
+  -webkit-flex: 1; flex: 1;
+  overflow: auto;
+}
+.Activity > main > .client-area > .Form {
+  padding: 0.5rem 0;
+  /* @apply .vbox */
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.Activity .Form > * {
+  margin: 0.5rem 1rem;
+  font-size: 4rem;
+  width: auto;
+}
+.Activity .Form > small {
+  font-size: 3rem;
+}

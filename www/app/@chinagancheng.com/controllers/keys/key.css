@@ -1,0 +1,23 @@
+main > .client-area {
+  padding: 8rem;
+  font-size: 4rem;
+  background: #e3e3e3;
+}
+main > .client-area > h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: center;
+}
+main > .client-area > h1 > img {
+  display: block;
+  width: 80%;
+  margin: 8rem auto;
+}
+main > .client-area > div {
+  display: table;
+  text-align: left;
+  margin: 0 auto;
+}
+main > .client-area > div > nobr {
+  display: table-row;
+}

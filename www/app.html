@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Non-Cordova App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="app/@chinagancheng.com/themes/default/html.css">
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/app/app.css">
+</head>
+<body>
+<div class="ActivityDeck"></div>
+<div class="HintLayer"></div>
+<div class="MenuLayer"></div>
+<script src="app/object-assign.js"></script>
+<script src="app/localforage.min.js"></script>
+<script src="app/impulse-ce.js"></script>
+<script src="app/thruster.js"></script>
+<script src="app/keypoint.js"></script>
+<script>
+//onerror = function (a, b, c, d, e) {
+//  alert(JSON.stringify([a, b, c, d, e]));
+//};
+</script>
+<script src="app/@chinagancheng.com/services/backends/cloud.js"></script>
+<script src="app/@chinagancheng.com/services/stand.js"></script>
+<script src="app/@chinagancheng.com/services/visa.js"></script>
+<script src="app/@chinagancheng.com/services/passport.js"></script>
+<script src="app/@chinagancheng.com/services/key.js"></script>
+<script src="app/@chinagancheng.com/services/lock.js"></script>
+<script src="app/@chinagancheng.com/services/message.js"></script>
+<script src="app/@chinagancheng.com/services/setting.js"></script>
+<script src="app/@chinagancheng.com/services/guest-key.js"></script>
+<script src="app/@chinagancheng.com/services/jpush.js"></script>
+<script src="app/@chinagancheng.com/controllers/sesame.js"></script>
+<script src="app/@chinagancheng.com/controllers/app/app.js"></script>
+<script src="app/@chinagancheng.com/services/nfc.js"></script>
+<script>
+APP.audioClips = {
+  done: new Audio('sound/ok.mp3')
+};
+
+var u = new URL('.STAND', location.href);
+u.protocol = 'ws:';
+STAND_SERVICE = new StandService(u.href);
+SHORTCUT_SERVICE = STAND_SERVICE;
+
+STAND_SERVICE.feed.subscribe('stand-prepared', '', function () {
+  STAND_SERVICE.send(JSON.stringify({type:'prepare-hint-audio', url:new URL('sound/click-on.mp3', document.baseURI).href}));
+  STAND_SERVICE.send(JSON.stringify({type:'prepare-hint-audio', url:new URL('sound/ok.mp3', document.baseURI).href}));
+
+  VISA_SERVICE = new VisaService(localStorage, function () {
+    APP.initialize('sign-on.html');
+  });
+  SETTING_SERVICE = new SettingService(VISA_SERVICE);
+
+  PASSPORT_SERVICE = new PassportService(VISA_SERVICE);
+
+  KEY_SERVICE = new KeyService(VISA_SERVICE);
+
+  LOCK_SERVICE = new LockService(STAND_SERVICE, VISA_SERVICE, KEY_SERVICE, SETTING_SERVICE);
+  LOCK_SERVICE.startScan();
+  window.addEventListener('visibilitychange', function (event) {
+    if (document.visibilityState == 'hidden') { // 应用被切换到后台
+//      LOCK_SERVICE.stopScan();
+    } else { // 应用被切换回前台
+//      LOCK_SERVICE.startScan();
+    }
+  });
+
+  MESSAGE_SERVICE = new MessageService(VISA_SERVICE, localStorage);
+
+  GUEST_KEY_SERVICE = new GuestKeyService(VISA_SERVICE);
+
+  PUSH_SERVICE = new PushService(STAND_SERVICE, VISA_SERVICE, KEY_SERVICE, MESSAGE_SERVICE);
+
+  var sesameController = new SesameController(STAND_SERVICE, KEY_SERVICE, LOCK_SERVICE, APP.audioClips.done);
+
+  STAND_SERVICE.send(JSON.stringify({type:'process-launch-command'}));
+
+  //nfc
+  NFC_SERVICE = new NFCService(STAND_SERVICE);
+
+
+  VISA_SERVICE.reload().then(
+    function () {
+      APP.initialize('main.html');
+    },
+    function () {
+      alert('服务器无响应，请尝试关掉应用，稍后重新打开');
+    }
+  );
+});
+</script>
+</body>
+</html>

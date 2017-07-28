@@ -1,0 +1,27 @@
+body {
+  overflow: auto;
+}
+div.Activity {
+  -webkit-display: flex; display: flex;
+  -webkit-flex-direction: column; flex-direction: column;
+  min-height: 100%;
+}
+.Logo {
+  margin: 10rem 0 6rem;
+  text-align: center;
+}
+.Logo > img {
+  width: 22.5rem;
+}
+.Logo > figcaption {
+  font-size: 6rem;
+  color: #2599fa;
+}
+.Hint {
+  margin-top: 1em;
+  text-align: center;
+}
+.Hint:empty {
+  margin-top: 0;
+}
+

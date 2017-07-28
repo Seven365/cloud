@@ -1,0 +1,41 @@
+.xd-container {
+    padding: 0 2.5rem;
+}
+
+.organ {
+    width: 100%;
+    height: 18rem;
+    /*margin-top: 5rem;*/
+    border: solid #ccc;
+    padding: 2rem 0 2rem 5rem;
+    border-width: 0 0 1px 0;
+    position: relative;
+}
+
+.organ>p {
+    margin: 0;
+}
+
+.organ>.organ-name {
+    line-height: 9rem;
+    font-size: 6rem;
+    height: 9rem;
+}
+
+.organ>.real-name {
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.5);
+    height: 5rem;
+	line-height: 5rem;
+}
+
+.organ>span {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+    right: 0px;
+    top: 50%;
+    margin-top: -13px;
+    color: #ccc;
+}

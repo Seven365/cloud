@@ -1,0 +1,30 @@
+main {
+  text-align: center;
+}
+
+figure {
+  margin-top: 9rem;
+}
+
+figure > img {
+  width: 20rem;
+  height: 20rem;
+}
+
+figure > figcaption {
+  font-size: 4.5rem;
+  color: #222222;
+}
+
+figure > figcaption > small {
+  font-size: 2rem;
+  color: #999999;
+}
+
+p {
+  text-align: left;
+  font-size: 3.5rem;
+  margin: 6.25rem;
+}
+
+

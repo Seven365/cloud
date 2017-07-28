@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>绑定nfc卡</title>
+    <link rel="stylesheet" href="app/@chinagancheng.com/themes/default/html.css" />
+    <link rel="stylesheet" href="app/@chinagancheng.com/controllers/activity/activity.css" />
+    <link rel="stylesheet" href="app/@chinagancheng.com/controllers/my/my.css" />
+    <link rel="stylesheet" href="app/@chinagancheng.com/controllers/my/bind-NFC-card.css" />
+</head>
+
+<body class="Activity">
+    <header class="hbox">
+        <span id="xd_back" data-trigger-target="back">卡包</span>
+        <span class="flexible">绑定NFC卡</span>
+        <!-- <span class=""><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1417"><path d="M537.540188 486.809271 537.540188 64.46829 487.853555 64.46829 487.853555 486.809271 65.512574 486.809271 65.512574 536.496927 487.853555 536.496927 487.853555 958.837908 537.540188 958.837908 537.540188 536.496927 959.882192 536.496927 959.882192 486.809271Z" p-id="1418"></path></svg></span> -->
+        <!-- <span id="add_nfc_card_btn">添加</span> -->
+    </header>
+    <div class="xd-container">
+    	<p style="" id="support_message" class="hint-message">您的爱机不支持NFC,请找管理员</p>
+    	<p id="state_message" class="hint-message">请打开NFC功能</p>
+        <p>
+            <label>卡号：
+                <input id="NFC_card_id" type="text" value="" disabled="disabled" placeholder="请刷卡获得卡号">
+            </label>
+        </p>
+        <p>
+            <label>备注：
+                <input id="comments" type="text" value="" placeholder="请输入你的备注">
+            </label>
+        </p>
+        <p>
+            <button id="xd_bind_NFC_btn">绑定</button>
+        </p>
+        <p style="padding: 0 7rem;
+font-size: 4rem;
+color: #ccc;
+">请将你的卡放在手机背面，<br/>绑定成功之后即可以用卡片开门</p>
+
+    </div>
+    <script src="app/impulse-ce.js"></script>
+    <script src="app/thruster.js"></script>
+    <script src="app/@chinagancheng.com/controllers/activity/activity.js"></script>
+    <!-- <script type="app/@chinagancheng.com/services/stand.js"></script> -->
+    <script src="app/@chinagancheng.com/controllers/my/bind-NFC-card.js"></script>
+</body>
+
+</html>

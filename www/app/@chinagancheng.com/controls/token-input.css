@@ -1,0 +1,10 @@
+.UKNTokenInput {
+  display: flex;
+}
+.UKNTokenInput input {
+  min-width: 0;
+  flex: 1;
+}
+.UKNTokenInput button {
+  min-width: 10em;
+}

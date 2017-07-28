@@ -1,0 +1,9 @@
+main > .client-area {
+  padding: 8rem;
+  font-size: 4rem;
+}
+.Datetime {
+}
+.Content {
+  white-space: pre-wrap;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>Alohomora</title>
+<link rel="stylesheet" href="app/@chinagancheng.com/themes/default/html.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/activity/activity.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/main/main.css" />
+</head>
+<body class="Activity">
+<main>
+<nobr class="client-area">
+  <iframe src="scan.html"></iframe>
+  <iframe src="keys.html"></iframe>
+  <iframe src="messages.html"></iframe>
+  <iframe src="my.html"></iframe>
+</nobr>
+</main>
+<script>
+var activeButton, activeImage;
+function switchTo(target) {
+  if (activeButton) activeButton.classList.remove('active');
+  if (activeImage) activeImage.src = "app/@chinagancheng.com/controllers/main/tab" + activeImage.dataset.tabId + ".svg"
+
+  activeButton = target;
+  activeImage = target.querySelector('img');
+
+  activeButton.classList.add('active');
+  activeImage.src = "app/@chinagancheng.com/controllers/main/tab" + activeImage.dataset.tabId + "a.svg"
+
+  var fragmentUrl = target.dataset.fragmentUrl;
+  var frame = document.querySelector('iframe[src="'+fragmentUrl+'"]');
+  var mainArea = document.querySelector('main > .client-area');
+  mainArea.scrollLeft = frame.offsetLeft;
+}
+</script>
+<footer class="hbox">
+<a class="flexible vbox" data-fragment-url="scan.html" ontouchend="switchTo(this);">
+<img src="app/@chinagancheng.com/controllers/main/tab0.svg" data-tab-id="0"/><label>首页</label>
+</a>
+<a class="flexible vbox" data-fragment-url="keys.html" ontouchend="switchTo(this);">
+<img src="app/@chinagancheng.com/controllers/main/tab1.svg" data-tab-id="1"/><label>钥匙</label>
+</a>
+<a class="flexible vbox" data-fragment-url="messages.html" ontouchend="switchTo(this);">
+<img src="app/@chinagancheng.com/controllers/main/tab2.svg" data-tab-id="2"/><label>消息</label>
+</a>
+<a class="flexible vbox" data-fragment-url="my.html" ontouchend="switchTo(this);">
+<img src="app/@chinagancheng.com/controllers/main/tab3.svg" data-tab-id="3"/><label>我的</label>
+</a>
+</footer>
+<script>switchTo(document.querySelector('[data-fragment-url="scan.html"]'))</script>
+<div class="MainMenu"></div>
+<script src="app/impulse-ce.js"></script>
+<script src="app/thruster.js"></script>
+<script src="app/@chinagancheng.com/controllers/activity/activity.js"></script>
+<script src="app/@chinagancheng.com/controllers/main/main.js"></script>
+</body>
+</html>

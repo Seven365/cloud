@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>注册</title>
+<link rel="stylesheet" href="app/@chinagancheng.com/themes/default/html.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/activity/activity-wh.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/sign/up.css" />
+</head>
+<body>
+<div class="Activity">
+<header><span data-trigger-target="back">返回</span>验证手机号码<button data-control-name="nextTrigger">下一步</button></header>
+<main>
+<div class="client-area">
+<figure class="Logo">
+<img src="app/@chinagancheng.com/controllers/app/logo.svg">
+</figure>
+
+<div class="Form">
+<div data-name="hint" class="Hint"></div>
+
+<div data-name="telephoneHint" class="Hint"></div>
+<div class="WHTextualInput"><input data-control-name="telephoneInput" type="text" placeholder="待验证手机号"></div>
+
+<div data-name="tokenCodeHint" class="Hint"></div>
+<div class="WHTextualInput">
+<input data-control-name="tokenCodeInput" type="text" placeholder="验证码">
+<button data-control-name="generateTrigger">获取验证码</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script src="app/impulse-ce.js"></script>
+<script src="app/thruster.js"></script>
+<script src="app/@chinagancheng.com/controllers/activity/activity.js"></script>
+<script src="app/@chinagancheng.com/controllers/sign/up-0.js"></script>
+</body>
+</html>

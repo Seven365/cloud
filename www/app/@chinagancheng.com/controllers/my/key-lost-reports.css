@@ -1,0 +1,23 @@
+main {
+  padding: 4rem;
+}
+main > * {
+  margin: 2rem 0;
+}
+label {
+  font-size: 4rem;
+  color: #9596ab;
+}
+input {
+  background: #e6e6ea;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5em;
+}
+button {
+  background: #2599fa;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5em;
+}

@@ -1,0 +1,33 @@
+body {
+  background: 50% 50% no-repeat;
+  background-size: cover;
+}
+.Activity > main > .client-area {
+  overflow: hidden;
+}
+.Activity > main > .client-area > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.Activity > footer {
+  border-top: #cccccc 1px solid;
+  color: #333333;
+  background: white;
+}
+.Activity > footer a {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem;
+}
+.Activity > footer a.active {
+  font-weight: 900;
+  color: #38A1FC;
+}
+.Activity > footer a > img {
+  display: block;
+  height: 5rem;
+  margin: 0.5rem auto;
+}

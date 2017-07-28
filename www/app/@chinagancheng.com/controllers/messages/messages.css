@@ -1,0 +1,36 @@
+.Activity > main {
+  background: white;
+}
+.Item {
+  border-bottom: solid 1px #DFDFDF;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  padding: 3rem 2.5rem;
+  font-size: 4rem;
+  align-items: center;
+}
+.Item > * {
+  overflow: hidden;
+}
+.Item .Icon {
+  min-width: 15rem;
+  height: 15rem;
+  margin: 0 2rem 0 0;
+}
+.Item .Sender {
+  overflow: hidden;
+  font-size: 4rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 1.25em;
+}
+.Item .Datetime{
+  overflow: hidden;
+}
+.Item .Content{
+  overflow: hidden;
+  text-overflow: ellipsis ellipsis;
+  height: 1.25em;
+}
+

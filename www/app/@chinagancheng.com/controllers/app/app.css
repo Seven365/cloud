@@ -1,0 +1,63 @@
+.ActivityDeck {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.ActivityDeck > iframe {
+  display: block;
+  border: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.30);
+  pointer-events: none;
+}
+.insensitive {
+}
+.ActivityDeck > iframe:last-of-type {
+  pointer-events: inherit;
+}
+.ActivityDeck > iframe.loading {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate(100%, 0);
+}
+.HintLayer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+}
+.HintLayer:empty {
+  padding: 0;
+}
+.MenuLayer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.MenuLayer:empty {
+  display: none;
+}
+.MenuLayer > .Menu {
+  color: white;
+  background: black;
+  max-width: 50%;
+  right: 1rem;
+  position: absolute;
+  top: 12rem;
+}
+.MenuLayer > .Menu  > * {
+  padding: 2rem 4rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}

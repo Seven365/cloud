@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="app/@chinagancheng.com/themes/default/html.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/activity/activity.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/my/my.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/my/guest-key-requests/step-0.css" />
+</head>
+<body class="Activity">
+<header class="hbox">
+<span data-trigger-target="back">我的</span>
+<span class="flexible">填写访客(最多10名)</span>
+</header>
+<div class="hbox">
+<input type="tel" class="flexible" data-control-name="guestPhoneNumberInput" placeholder="访客手机号码"/>
+<button data-control-name="addGuestTrigger">添加</button>
+</div>
+<main class="vbox">
+<div class="client-area" data-control-name="guestInfoList"></div>
+</main>
+<footer class="hbox">
+<span data-control-name="nextStepTrigger">下一步</span>
+</footer>
+<script src="app/impulse-ce.js"></script>
+<script src="app/thruster.js"></script>
+<script src="app/@chinagancheng.com/controllers/activity/activity.js"></script>
+<script src="app/@chinagancheng.com/controllers/my/guest-key-requests/step-0.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.Activity > main {
+  background: #F0EFF5;
+}
+.ItemGroup {
+  background: white;
+  margin-top: 5rem;
+  border-top: solid 1px #D2D2D2;
+  font-size: 4rem;
+}
+.ItemGroup > * {
+  padding: 3rem 2.5rem;
+  border-bottom: solid 1px #D2D2D2;
+}
+.Avatar {
+  width: 15rem;
+}
+.UserInfo {
+  padding: 0 2.5rem;
+  font-size: 3rem;
+  color: #666;
+}
+.UserInfo .Name {
+  font-size: 4rem;
+  color: #000;
+}
+.SignOffButton {
+  text-align: center;
+  background-image: none;
+}
+

@@ -1,0 +1,18 @@
+.Item {
+  display: -webkit-flex; display: flex;
+  padding: 2rem 2.5rem;
+  border-bottom: solid 1px #d2d2d2;
+  min-height: 11.25rem;
+}
+.ItemIcon {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 2rem;
+}
+.ItemContent {
+  -webkit-flex: 1; flex: 1
+  font-size: 4rem;
+}
+.ItemContent header {
+  font-size: 5rem;
+}

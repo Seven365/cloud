@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controls/switch.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/themes/default/html.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/activity/activity.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/my/my.css" />
+<link rel="stylesheet" href="app/@chinagancheng.com/controllers/my/guest-key-requests/step-2.css" />
+</head>
+<body class="Activity">
+<header class="hbox">
+<span data-trigger-target="back">返回</span>
+<span class="flexible">设置钥匙参数</span>
+</header>
+<main>
+<div class="ItemGroup">
+<div class="hbox"><span class="flexible">生效时间</span><input type="datetime-local" data-control-name="effectiveTimeInput" step="any" required=""></div>
+<div class="hbox"><span class="flexible">失效时间</span><input type="datetime-local" data-control-name="expireTimeInput" step="any" required=""></div>
+<div class="hbox"><span class="flexible">次数受限</span><label data-control-name="limitSwitch"></label></div>
+<input type="hidden" data-control-name="limitInput" value="1">
+<div class="hbox" data-control-name="limitEditorTrigger">
+<span class="flexible">最多使用次数</span><span data-control-name="limitOutput">1</span>
+</div>
+</div>
+<div class="ItemGroup">
+<div class="SignOffButton" data-control-name="submitTrigger">完成</div>
+</div>
+</main>
+<script src="app/impulse-ce.js"></script>
+<script src="app/thruster.js"></script>
+<script src="app/@chinagancheng.com/controls/switch.js"></script>
+<script src="app/@chinagancheng.com/controllers/activity/activity.js"></script>
+<script src="app/@chinagancheng.com/controllers/my/guest-key-requests/step-2.js"></script>
+</body>
+</html>

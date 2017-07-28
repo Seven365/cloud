@@ -1,0 +1,28 @@
+.UKNSwitch {
+  width: 3.6em;
+  height: 1.2em;
+  display: inline-block;
+  border: solid 2px #efefef;
+  border-radius: 4px;
+  background-color: #dedede;
+  transition-property: background-color;
+  transition: background-color 0.2s;
+}
+.UKNSwitch::before {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: white;
+  border-radius: 2px;
+  content: "";
+  transition-property: transform;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+}
+.UKNSwitch[data-state=on]::before {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.UKNSwitch[data-state=on] {
+  background: #00cc00;
+}

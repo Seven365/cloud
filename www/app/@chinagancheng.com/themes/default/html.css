@@ -1,0 +1,30 @@
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+html {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1vw;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 5rem;
+}
+h1 {
+  margin-top: 0;
+}
+input, textarea {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  font-size: 1em;
+  min-width: 0;
+}
+button {
+  font-size: 1em;
+  white-space: nowrap;
+}
+[hidden] {
+  display: none !important;
+}

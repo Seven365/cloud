@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.vbox {
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.hbox {
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: row; flex-flow: row;
+}
+.flexible {
+  position: relative;
+  -webkit-flex:1; flex: 1;
+}
+.client-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+.Activity {
+  /* @apply .vbox */
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.Activity > header {
+  background: white;
+  color: black;
+  padding: 3rem 1rem;
+  line-height: 6rem;
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+}
+.Activity > header > [data-trigger-target=back] {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 3rem 1rem 2rem 4rem;
+  background: url(back-black.svg) 1rem 50% no-repeat;
+  background-size: 2rem 4rem;
+  z-index: 999;
+}
+.Activity > header > [data-trigger-target=back]:active {
+  color: #3c8dcc;
+  background-image: url(back-blue.svg);
+}
+.Activity > header > button {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+  background: transparent;
+  border: none;
+}
+.Activity > header > button:active {
+  color: #3c8dcc;
+}
+.Activity > main {
+  position: relative;
+  -webkit-flex: 1; flex: 1;
+  overflow: auto;
+}
+.Activity > main > .client-area .Form {
+  padding: 0.5rem 0;
+  margin: 0 3.5rem;
+  /* @apply .vbox */
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.Activity .Form > * {
+  font-size: 4rem;
+  width: auto;
+}
+.Activity .Form > small {
+  font-size: 3rem;
+}
+:not(output):-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.Logo {
+  margin: 10rem 0 6rem;
+  text-align: center;
+}
+.Logo > img {
+  width: 22.5rem;
+}
+.Logo > figcaption {
+  font-size: 6rem;
+  color: #2599fa;
+}
+
+/*****************************************************/
+.WHFieldSection {
+  padding: 0.5rem 0;
+  /* @apply .vbox */
+  display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column; flex-flow: column;
+}
+.WHTextualInput {
+  display: -webkit-flex; display: flex;
+  padding: 0;
+  min-height: 11.25rem;
+  box-sizing: border-box;
+}
+.WHTextualInput > input {
+  border: none;
+  border-bottom: solid 0.2rem #999999;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background: transparent;
+  font-size: 4rem;
+  color: #999999;
+  -webkit-flex: 1; flex: 1;
+}
+.WHTextualInput > button {
+  background: #7a7a79;
+  color: white;
+  border: none;
+}
+.WHButton {
+  text-align: center;
+  color: #e2e2e2;
+  font-size: 7.75rem;
+  padding: 3rem 2rem;
+  background: #3c8dcc;
+  border-radius: 1rem;
+  min-height: 11.25rem;
+}
+
+

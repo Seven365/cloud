@@ -1,0 +1,66 @@
+.UKNKeyGroup > header {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
+
+  padding: 2rem 2.5rem;
+  border-bottom: solid 1px #d2d2d2;
+  font-size: 4rem;
+}
+.UKNKeyGroup > header .Icon {
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem 2rem 1rem 0;
+}
+.UKNKeyGroup > header .Name {
+  -webkit-flex: 1; flex: 1;
+}
+.UKNKeyGroup > header .Indicator {
+  width: 8rem;
+  height: 4rem;
+  margin-right: 2rem;
+  transition: transform 0.3s;
+}
+.UKNKeyGroup.expanded > header .Indicator {
+  transition: transform 0.3s;
+  -webkit-transform: rotate(-180deg); transform: rotate(-180deg);
+}
+.UKNKeyGroup > header .Name {
+  -webkit-flex: 1; flex: 1;
+}
+.UKNKeyGroup > section {
+  display: none;
+}
+.expanded.UKNKeyGroup > section {
+  display: block;
+}
+.UKNKeyGroup > section > .Item {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  border-bottom: solid 1px #d2d2d2;
+}
+.UKNKeyGroup > section > .Item[hidden] {
+  display: none;
+}
+.UKNKeyGroup > section > .Item .Icon {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 1rem 2.5rem 1rem 1.5rem;
+}
+.UKNKeyGroup > section > .Item .Name {
+  -webkit-flex: 1;
+  flex: 1;
+  font-size: 4rem;
+}
+.UKNKeyGroup > section > .Item .ExtraInfo0 {
+  text-align: right;
+  font-size: 3rem;
+}
+.UKNKeyGroup > section > .Item .ExtraInfo1 {
+  text-align: right;
+  font-size: 3rem;
+}

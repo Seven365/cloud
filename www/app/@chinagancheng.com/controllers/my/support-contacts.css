@@ -1,0 +1,16 @@
+.client-area > a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  background: white;
+  text-decoration: none;
+  padding: 1em;
+}
+.client-area > a > span:last-child {
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: right;
+  color: #999999;
+}
+

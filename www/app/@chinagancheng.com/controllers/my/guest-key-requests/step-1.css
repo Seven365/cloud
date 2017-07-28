@@ -1,0 +1,21 @@
+header {
+  position: relative;
+}
+[data-control-name="nextStepTrigger"] {
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  -webkit-flex: 1;
+}
+header, 
+label {
+  display: block;
+  padding: 3rem 2.5rem;
+  border-bottom: solid 1px #D2D2D2;
+}
+*[hidden] {
+  display: none;
+}
+label {
+  font-size: 4rem;
+}

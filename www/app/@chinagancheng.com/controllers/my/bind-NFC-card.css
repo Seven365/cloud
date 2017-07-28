@@ -1,0 +1,25 @@
+.xd-container>p {
+    text-align: center;
+}
+
+.xd-container>p input {
+    border: none;
+    background: #eee;
+    height: 8rem;
+    padding-left: 2rem;
+}
+
+#xd_bind_NFC_btn {
+    border: none;
+    width: 70%;
+    height: 11rem;
+    border-radius: 0.5rem;
+    background-color: #2599fa;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.hint-message {
+	color: red;
+	display: none;
+}

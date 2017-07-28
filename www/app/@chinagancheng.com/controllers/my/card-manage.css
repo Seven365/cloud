@@ -1,0 +1,44 @@
+.xd-container {
+    padding: 0 2.5rem;
+}
+
+.xd-container>.total-cards-title {
+    font-size: 4rem;
+}
+
+.xd-container>.total-cards-content>.card {
+    width: 100%;
+    height: 18rem;
+    /*background: yellow;*/
+    background-image: url("../../../../entries/bg.jpg");
+    /*border: 2px solid red;*/
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 0 4rem;
+    line-height: 18rem;
+}
+
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*.xd-container>.total-cards-content>.card>.deadline {
+    float: right;
+}*/
+
+.xd-container>.total-cards-content>.card>p:nth-child(1) {
+    height: 11rem;
+    line-height: 11rem;
+    font-size: 7rem;
+    margin: 0;
+    padding-top: 6px;
+}
+
+.xd-container>.total-cards-content>.card>p:nth-child(2) {
+
+    height: 7rem;
+    line-height: 7rem;
+    font-size: 12px;
+
+    margin: 0;
+}

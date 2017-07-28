@@ -1,0 +1,41 @@
+header {
+  position: relative;
+}
+[data-control-name="nextStepTrigger"] {
+  -webkit-flex: 1;
+
+  flex: 1;
+
+  padding: 2rem;
+  text-align: center;
+}
+main {
+  background: red;
+}
+.Item {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 3rem 2.5rem;
+  border-bottom: solid 1px #D2D2D2;
+  font-size: 4rem;
+  background: white;
+}
+footer {
+  padding: 0 1rem;
+  border-top: solid 0.5rem #D2D2D2;
+}
+body > .hbox {
+  border: solid #D2D2D2 0.5rem;
+  border-radius: 0.5rem;
+}
+body > .hbox > button {
+  border: none;
+  border-radius: 0;
+  color: #35a1fb;
+}

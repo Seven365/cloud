@@ -1,0 +1,21 @@
+.TriggerButton {
+  margin: 9rem 7rem 0;
+  border: solid 1px #cccccc;
+  clear: both;
+  height: 40rem;
+  text-align: center;
+}
+
+.TriggerButton > img {
+  float: left;
+  width: 23rem;
+  height: 23rem;
+  margin: 8rem 0 0 4.5rem;
+}
+.TriggerButton > div {
+  margin-top: 12rem;
+}
+.TriggerButton > small {
+  font-size: 2.5rem;
+}
+
