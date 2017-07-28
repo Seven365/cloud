@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22848d11-b170-45b2-83f7-86cd5d737699" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.html" afterPath="$PROJECT_DIR$/app.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/my.js" afterPath="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/my.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/@chinagancheng.com/services/visa.js" afterPath="$PROJECT_DIR$/app/@chinagancheng.com/services/visa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my.html" afterPath="$PROJECT_DIR$/my.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.html" afterPath="$PROJECT_DIR$/app.html" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="organ-accounts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/organ-accounts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="-60">
               <caret line="15" column="25" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="25" />
               <folding />
             </state>
@@ -49,20 +49,20 @@
       <file leaf-file-name="organ-accounts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/organ-accounts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
               <folding>
-                <marker date="1501212844000" expanded="true" signature="989:1072" placeholder="..." />
+                <marker date="1501220198000" expanded="true" signature="989:1072" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card-manage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="card-manage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/card-manage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -78,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nfc.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nfc.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/services/nfc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="523">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -126,11 +126,11 @@
         <option value="$PROJECT_DIR$/organ_account.html" />
         <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/my.js" />
         <option value="$PROJECT_DIR$/card-manage.html" />
-        <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/card-manage.js" />
         <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/organ-accounts.css" />
-        <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/organ-accounts.js" />
         <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/bind-NFC-card.js" />
         <option value="$PROJECT_DIR$/app/@chinagancheng.com/services/nfc.js" />
+        <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/organ-accounts.js" />
+        <option value="$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/card-manage.js" />
       </list>
     </option>
   </component>
@@ -169,8 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,6 +317,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,11 +393,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501208132971</updated>
       <workItem from="1501208134950" duration="3185000" />
+      <workItem from="1501213383657" duration="1147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3185000" />
+    <option name="totallyTimeSpent" value="4332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1260" height="722" extended-state="0" />
@@ -450,7 +451,7 @@
         <state relative-caret-position="374">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
-            <marker date="1501212844000" expanded="true" signature="989:1072" placeholder="..." />
+            <marker date="1501220198000" expanded="true" signature="989:1072" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -507,6 +508,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -522,14 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/organ-accounts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -554,24 +548,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/card-manage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/organ-accounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <marker date="1501212844000" expanded="true" signature="989:1072" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,8 +562,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/services/nfc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="523">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/organ-accounts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/organ-accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+          <folding>
+            <marker date="1501220198000" expanded="true" signature="989:1072" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/@chinagancheng.com/controllers/my/card-manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding />
         </state>
       </provider>

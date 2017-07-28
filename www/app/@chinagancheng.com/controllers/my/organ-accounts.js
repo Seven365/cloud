@@ -13,7 +13,7 @@ xd_back.addEventListener('touchend', function (e) {
     APP.closePopup();
 });
 
-var xhr = BACKEND.makeRequest('get', '/v2/mobile/oragn_accounts', 'josn');
+var xhr = BACKEND.makeRequest('get', '/v2/mobile/oragn_accounts', 'json');
 BACKEND.sendRequest(xhr).then(function (results) {
     alert(results);
     if(!results.result){

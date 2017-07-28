@@ -18,7 +18,7 @@ xd_back.addEventListener('touchend', function (e) {
 });
 
 add_nfc_card_btn.addEventListener('touchend' , function () {
-	APP.openPopup('bind-NFC-card.html');
+	APP.openPopup('bind-NFC-card.html'); 
 });
 
 NFC_SERVICE.feed.subscribe('redownload-cards', null, function () {
